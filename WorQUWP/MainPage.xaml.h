@@ -20,6 +20,8 @@ namespace WorQUWP
 	private:
 		void Button_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
 		void Button_Tapped(Platform::Object^ sender, Windows::UI::Xaml::Input::TappedRoutedEventArgs^ e);
+		void SignOutClick(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
+		void SignOutTapped(Platform::Object^ sender, Windows::UI::Xaml::Input::TappedRoutedEventArgs^ e);
 	};
 	
 }

@@ -41,9 +41,33 @@
                 <Button x:Name="inputButton" Content="Enter" Click="Button_Click" Tapped="Button_Tapped"/>
             </StackPanel>
             <TextBlock x:Name="entryReceived" Style="{StaticResource BaseTextBlockStyle}"/>
+            <StackPanel x:Name="queueTable" Orientation="Vertical">
+                <TextBlock Text="Currently in the queue:" FontSize="20"/>
+                <StackPanel x:Name="firstInLine" Orientation="Horizontal">
+                    <TextBlock x:Name="firstName" Style="{StaticResource BaseTextBlockStyle}"/>
+                    <TextBlock x:Name="firstTime" Style="{StaticResource BaseTextBlockStyle}"/>
+                </StackPanel>
+                <StackPanel x:Name="secInLine" Orientation="Horizontal">
+                    <TextBlock x:Name="secName" Style="{StaticResource BaseTextBlockStyle}"/>
+                    <TextBlock x:Name="secTime" Style="{StaticResource BaseTextBlockStyle}"/>
+                </StackPanel>
+                <StackPanel x:Name="thirdInLine" Orientation="Horizontal">
+                    <TextBlock x:Name="thirdName" Style="{StaticResource BaseTextBlockStyle}"/>
+                    <TextBlock x:Name="thirdTime" Style="{StaticResource BaseTextBlockStyle}"/>
+                </StackPanel>
+                <StackPanel x:Name="fourthInLine" Orientation="Horizontal">
+                    <TextBlock x:Name="fourthName" Style="{StaticResource BaseTextBlockStyle}"/>
+                    <TextBlock x:Name="fourthTime" Style="{StaticResource BaseTextBlockStyle}"/>
+                </StackPanel>
+                <StackPanel x:Name="fifthInLine" Orientation="Horizontal">
+                    <TextBlock x:Name="fifthName" Style="{StaticResource BaseTextBlockStyle}"/>
+                    <TextBlock x:Name="fifthTime" Style="{StaticResource BaseTextBlockStyle}"/>
+                </StackPanel>
+            </StackPanel>
+            <TextBlock Text="All done? Enter your PIN to sign out."/>
+            <TextBox x:Name="pinSignOut" Width="100" HorizontalAlignment="Left"/>
+            <Button Name="signOutButton" Content="Sign out" Click="SignOutClick" Tapped="SignOutTapped"/>
         </StackPanel>
-        <StackPanel x:Name="queueTable" >
-            
-        </StackPanel>
+        
     </Grid>
 </Page>
