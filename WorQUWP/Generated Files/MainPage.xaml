@@ -29,44 +29,44 @@
         </VisualStateManager.VisualStateGroups>
 
         <StackPanel x:ConnectionId='3' x:Name="contentPanel" Margin="50,30,0,0">
-            <TextBlock HorizontalAlignment="Left" Text="WorQ" FontSize="36"/>
+            <TextBlock HorizontalAlignment="Left" Text="WorQ" Style="{StaticResource HeaderTextBlockStyle}"/>
             <StackPanel x:ConnectionId='4' x:Name="inputPanel" Orientation="Vertical" Margin="0,20,0,20">
                 <TextBlock Text="Add yourself to the queue:" FontSize="20" Style="{StaticResource BaseTextBlockStyle}"/>
                 <TextBlock Text="Name:" FontSize="18"/>
-                <TextBox x:ConnectionId='24' x:Name="nameInput" Width="300" HorizontalAlignment="Left"/>
+                <TextBox x:ConnectionId='25' x:Name="nameInput" Width="300" HorizontalAlignment="Left"/>
                 <TextBlock Text="Email:" FontSize="18"/>
-                <TextBox x:ConnectionId='25' x:Name="emailInput" Width="300" HorizontalAlignment="Left"/>
+                <TextBox x:ConnectionId='26' x:Name="emailInput" Width="300" HorizontalAlignment="Left"/>
                 <TextBlock Text="4-digit PIN (so no one can remove you)"/>
-                <TextBox x:ConnectionId='26' x:Name="pinInput" Width="300" HorizontalAlignment="Left"/>
-                <Button x:ConnectionId='27' x:Name="inputButton" Content="Enter"                                            />
+                <TextBox x:ConnectionId='27' x:Name="pinInput" Width="300" HorizontalAlignment="Left"/>
+                <Button x:ConnectionId='28' x:Name="inputButton" Content="Enter"                     />
             </StackPanel>
             <TextBlock x:ConnectionId='5' x:Name="entryReceived" Style="{StaticResource BaseTextBlockStyle}"/>
             <StackPanel x:ConnectionId='6' x:Name="queueTable" Orientation="Vertical">
-                <TextBlock Text="Currently in the queue:" FontSize="20"/>
-                <StackPanel x:ConnectionId='9' x:Name="firstInLine" Orientation="Horizontal">
-                    <TextBlock x:ConnectionId='22' x:Name="firstName" Style="{StaticResource BaseTextBlockStyle}"/>
-                    <TextBlock x:ConnectionId='23' x:Name="firstTime" Style="{StaticResource BaseTextBlockStyle}"/>
+                <TextBlock x:ConnectionId='9' x:Name="queueTitle" FontSize="20"/>
+                <StackPanel x:ConnectionId='10' x:Name="firstInLine" Orientation="Horizontal">
+                    <TextBlock x:ConnectionId='23' x:Name="firstName" Style="{StaticResource BaseTextBlockStyle}"/>
+                    <TextBlock x:ConnectionId='24' x:Name="firstTime" Style="{StaticResource BaseTextBlockStyle}"/>
                 </StackPanel>
-                <StackPanel x:ConnectionId='10' x:Name="secInLine" Orientation="Horizontal">
-                    <TextBlock x:ConnectionId='20' x:Name="secName" Style="{StaticResource BaseTextBlockStyle}"/>
-                    <TextBlock x:ConnectionId='21' x:Name="secTime" Style="{StaticResource BaseTextBlockStyle}"/>
+                <StackPanel x:ConnectionId='11' x:Name="secInLine" Orientation="Horizontal">
+                    <TextBlock x:ConnectionId='21' x:Name="secName" Style="{StaticResource BaseTextBlockStyle}"/>
+                    <TextBlock x:ConnectionId='22' x:Name="secTime" Style="{StaticResource BaseTextBlockStyle}"/>
                 </StackPanel>
-                <StackPanel x:ConnectionId='11' x:Name="thirdInLine" Orientation="Horizontal">
-                    <TextBlock x:ConnectionId='18' x:Name="thirdName" Style="{StaticResource BaseTextBlockStyle}"/>
-                    <TextBlock x:ConnectionId='19' x:Name="thirdTime" Style="{StaticResource BaseTextBlockStyle}"/>
+                <StackPanel x:ConnectionId='12' x:Name="thirdInLine" Orientation="Horizontal">
+                    <TextBlock x:ConnectionId='19' x:Name="thirdName" Style="{StaticResource BaseTextBlockStyle}"/>
+                    <TextBlock x:ConnectionId='20' x:Name="thirdTime" Style="{StaticResource BaseTextBlockStyle}"/>
                 </StackPanel>
-                <StackPanel x:ConnectionId='12' x:Name="fourthInLine" Orientation="Horizontal">
-                    <TextBlock x:ConnectionId='16' x:Name="fourthName" Style="{StaticResource BaseTextBlockStyle}"/>
-                    <TextBlock x:ConnectionId='17' x:Name="fourthTime" Style="{StaticResource BaseTextBlockStyle}"/>
+                <StackPanel x:ConnectionId='13' x:Name="fourthInLine" Orientation="Horizontal">
+                    <TextBlock x:ConnectionId='17' x:Name="fourthName" Style="{StaticResource BaseTextBlockStyle}"/>
+                    <TextBlock x:ConnectionId='18' x:Name="fourthTime" Style="{StaticResource BaseTextBlockStyle}"/>
                 </StackPanel>
-                <StackPanel x:ConnectionId='13' x:Name="fifthInLine" Orientation="Horizontal">
-                    <TextBlock x:ConnectionId='14' x:Name="fifthName" Style="{StaticResource BaseTextBlockStyle}"/>
-                    <TextBlock x:ConnectionId='15' x:Name="fifthTime" Style="{StaticResource BaseTextBlockStyle}"/>
+                <StackPanel x:ConnectionId='14' x:Name="fifthInLine" Orientation="Horizontal">
+                    <TextBlock x:ConnectionId='15' x:Name="fifthName" Style="{StaticResource BaseTextBlockStyle}"/>
+                    <TextBlock x:ConnectionId='16' x:Name="fifthTime" Style="{StaticResource BaseTextBlockStyle}"/>
                 </StackPanel>
             </StackPanel>
             <TextBlock Text="All done? Enter your PIN to sign out."/>
             <TextBox x:ConnectionId='7' x:Name="pinSignOut" Width="100" HorizontalAlignment="Left"/>
-            <Button x:ConnectionId='8' Name="signOutButton" Content="Sign out"                                            />
+            <Button x:ConnectionId='8' Name="signOutButton" Content="Sign out"                     />
         </StackPanel>
         
     </Grid>

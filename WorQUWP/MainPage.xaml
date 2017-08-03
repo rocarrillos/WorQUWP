@@ -29,7 +29,7 @@
         </VisualStateManager.VisualStateGroups>
 
         <StackPanel x:Name="contentPanel" Margin="50,30,0,0">
-            <TextBlock HorizontalAlignment="Left" Text="WorQ" FontSize="36"/>
+            <TextBlock HorizontalAlignment="Left" Text="WorQ" Style="{StaticResource HeaderTextBlockStyle}"/>
             <StackPanel x:Name="inputPanel" Orientation="Vertical" Margin="0,20,0,20">
                 <TextBlock Text="Add yourself to the queue:" FontSize="20" Style="{StaticResource BaseTextBlockStyle}"/>
                 <TextBlock Text="Name:" FontSize="18"/>
@@ -38,11 +38,11 @@
                 <TextBox x:Name="emailInput" Width="300" HorizontalAlignment="Left"/>
                 <TextBlock Text="4-digit PIN (so no one can remove you)"/>
                 <TextBox x:Name="pinInput" Width="300" HorizontalAlignment="Left"/>
-                <Button x:Name="inputButton" Content="Enter" Click="Button_Click" Tapped="Button_Tapped"/>
+                <Button x:Name="inputButton" Content="Enter" Click="Button_Click"/>
             </StackPanel>
             <TextBlock x:Name="entryReceived" Style="{StaticResource BaseTextBlockStyle}"/>
             <StackPanel x:Name="queueTable" Orientation="Vertical">
-                <TextBlock Text="Currently in the queue:" FontSize="20"/>
+                <TextBlock x:Name="queueTitle" FontSize="20"/>
                 <StackPanel x:Name="firstInLine" Orientation="Horizontal">
                     <TextBlock x:Name="firstName" Style="{StaticResource BaseTextBlockStyle}"/>
                     <TextBlock x:Name="firstTime" Style="{StaticResource BaseTextBlockStyle}"/>
@@ -66,7 +66,7 @@
             </StackPanel>
             <TextBlock Text="All done? Enter your PIN to sign out."/>
             <TextBox x:Name="pinSignOut" Width="100" HorizontalAlignment="Left"/>
-            <Button Name="signOutButton" Content="Sign out" Click="SignOutClick" Tapped="SignOutTapped"/>
+            <Button Name="signOutButton" Content="Sign out" Click="SignOutClick"/>
         </StackPanel>
         
     </Grid>

@@ -67,107 +67,108 @@ void ::WorQUWP::MainPage::Connect(int __connectionId, ::Platform::Object^ __targ
                 this->signOutButton = safe_cast<::Windows::UI::Xaml::Controls::Button^>(__target);
                 (safe_cast<::Windows::UI::Xaml::Controls::Button^>(this->signOutButton))->Click += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::WorQUWP::MainPage::*)
                     (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&MainPage::SignOutClick);
-                (safe_cast<::Windows::UI::Xaml::Controls::Button^>(this->signOutButton))->Tapped += ref new ::Windows::UI::Xaml::Input::TappedEventHandler(this, (void (::WorQUWP::MainPage::*)
-                    (::Platform::Object^, ::Windows::UI::Xaml::Input::TappedRoutedEventArgs^))&MainPage::SignOutTapped);
             }
             break;
         case 9:
             {
-                this->firstInLine = safe_cast<::Windows::UI::Xaml::Controls::StackPanel^>(__target);
+                this->queueTitle = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
             }
             break;
         case 10:
             {
-                this->secInLine = safe_cast<::Windows::UI::Xaml::Controls::StackPanel^>(__target);
+                this->firstInLine = safe_cast<::Windows::UI::Xaml::Controls::StackPanel^>(__target);
             }
             break;
         case 11:
             {
-                this->thirdInLine = safe_cast<::Windows::UI::Xaml::Controls::StackPanel^>(__target);
+                this->secInLine = safe_cast<::Windows::UI::Xaml::Controls::StackPanel^>(__target);
             }
             break;
         case 12:
             {
-                this->fourthInLine = safe_cast<::Windows::UI::Xaml::Controls::StackPanel^>(__target);
+                this->thirdInLine = safe_cast<::Windows::UI::Xaml::Controls::StackPanel^>(__target);
             }
             break;
         case 13:
             {
-                this->fifthInLine = safe_cast<::Windows::UI::Xaml::Controls::StackPanel^>(__target);
+                this->fourthInLine = safe_cast<::Windows::UI::Xaml::Controls::StackPanel^>(__target);
             }
             break;
         case 14:
             {
-                this->fifthName = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
+                this->fifthInLine = safe_cast<::Windows::UI::Xaml::Controls::StackPanel^>(__target);
             }
             break;
         case 15:
             {
-                this->fifthTime = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
+                this->fifthName = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
             }
             break;
         case 16:
             {
-                this->fourthName = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
+                this->fifthTime = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
             }
             break;
         case 17:
             {
-                this->fourthTime = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
+                this->fourthName = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
             }
             break;
         case 18:
             {
-                this->thirdName = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
+                this->fourthTime = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
             }
             break;
         case 19:
             {
-                this->thirdTime = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
+                this->thirdName = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
             }
             break;
         case 20:
             {
-                this->secName = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
+                this->thirdTime = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
             }
             break;
         case 21:
             {
-                this->secTime = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
+                this->secName = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
             }
             break;
         case 22:
             {
-                this->firstName = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
+                this->secTime = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
             }
             break;
         case 23:
             {
-                this->firstTime = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
+                this->firstName = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
             }
             break;
         case 24:
             {
-                this->nameInput = safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(__target);
+                this->firstTime = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
             }
             break;
         case 25:
             {
-                this->emailInput = safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(__target);
+                this->nameInput = safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(__target);
             }
             break;
         case 26:
             {
-                this->pinInput = safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(__target);
+                this->emailInput = safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(__target);
             }
             break;
         case 27:
             {
+                this->pinInput = safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(__target);
+            }
+            break;
+        case 28:
+            {
                 this->inputButton = safe_cast<::Windows::UI::Xaml::Controls::Button^>(__target);
                 (safe_cast<::Windows::UI::Xaml::Controls::Button^>(this->inputButton))->Click += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::WorQUWP::MainPage::*)
                     (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&MainPage::Button_Click);
-                (safe_cast<::Windows::UI::Xaml::Controls::Button^>(this->inputButton))->Tapped += ref new ::Windows::UI::Xaml::Input::TappedEventHandler(this, (void (::WorQUWP::MainPage::*)
-                    (::Platform::Object^, ::Windows::UI::Xaml::Input::TappedRoutedEventArgs^))&MainPage::Button_Tapped);
             }
             break;
     }

@@ -50,6 +50,7 @@ namespace WorQUWP
         private: ::Windows::UI::Xaml::Controls::StackPanel^ queueTable;
         private: ::Windows::UI::Xaml::Controls::TextBox^ pinSignOut;
         private: ::Windows::UI::Xaml::Controls::Button^ signOutButton;
+        private: ::Windows::UI::Xaml::Controls::TextBlock^ queueTitle;
         private: ::Windows::UI::Xaml::Controls::StackPanel^ firstInLine;
         private: ::Windows::UI::Xaml::Controls::StackPanel^ secInLine;
         private: ::Windows::UI::Xaml::Controls::StackPanel^ thirdInLine;
